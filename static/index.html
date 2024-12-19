@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Program</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bonus Program</h1>
+        <div id="auth-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p id="login-message"></p>
+        </div>
+        <div id="bonus-info" style="display: none;">
+            <h2>Your Bonus Info</h2>
+            <p><strong>Current Level:</strong> <span id="current-level"></span></p>
+            <p><strong>Cashback:</strong> <span id="cashback-percentage"></span>%</p>
+            <p><strong>Next Level:</strong> <span id="next-level"></span></p>
+            <p><strong>Next Level Threshold:</strong> <span id="next-level-threshold"></span></p>
+             <p><strong>Current Spending:</strong> <span id="current-spending"></span></p>
+              <button onclick="logout()">Logout</button>
+        </div>
+         <div id="error-message" style="display: none;"></div>
+    </div>
+
+    <script src="static/scripts.js"></script>
+</body>
+</html>
